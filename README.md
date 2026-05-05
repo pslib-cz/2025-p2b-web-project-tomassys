@@ -7,3 +7,5 @@
 
 **Odkaz na Canvu** - https://canva.link/ljy5rzc5c7nsjcb <br>
 **Odkaz na github pages** - https://pslib-cz.github.io/2025-p2b-web-project-tomassys/
+
+**Odkaz na grafický koncept ve Figmě** - https://www.figma.com/site/MfZBLR3x1FYCjOUtw9yNiP/Timeline-of-Light-and-Dark?node-id=0-1&t=Zrp6yCc4GMqNrH1p-1
