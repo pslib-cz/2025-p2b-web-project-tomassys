@@ -33,8 +33,7 @@
     overflow-x: hidden;
     cursor: default;
   }
- 
-  /* HERO */
+
   .hero {
     position: relative;
     min-height: 100vh;
@@ -73,8 +72,7 @@
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
- 
-  /* DESTINY 2 GAME LOGO */
+
   .game-logo {
     display: flex;
     align-items: center;
@@ -160,8 +158,7 @@
     width: 1px; height: 40px;
     background: linear-gradient(to bottom, var(--gold), transparent);
   }
- 
-  /* TIMELINE SECTION */
+
   .timeline-section {
     padding: 50px 0 120px;
     position: relative;
@@ -194,8 +191,7 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     margin: 20px auto 0;
   }
- 
-  /* VERTICAL TIMELINE */
+
   .v-timeline {
     position: relative;
     max-width: 700px;
@@ -330,13 +326,52 @@
     color: var(--text-muted);
     border: 1px solid rgba(255,255,255,0.07);
   }
- 
-  /* connector tick removed */
+
   .v-node::before {
     display: none;
   }
 
-  /* FOOTER */
+  @media (max-width: 600px) {
+  .v-timeline {
+    padding: 0 20px 80px;
+  }
+
+  .v-line {
+    left: 50%;
+  }
+
+  .v-node,
+  .v-node-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin-bottom: 60px;
+  }
+
+  .v-label-left,
+  .v-label-right {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    padding: 0;
+    margin-top: 8px;
+  }
+
+  .v-center {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .v-orb {
+    width: 90px;
+    height: 90px;
+  }
+
+  .v-name {
+    font-size: 16px;
+  }
+}
+
   footer {
     border-top: 1px solid rgba(201,168,76,0.1);
     padding: 40px;
@@ -347,8 +382,7 @@
     text-transform: uppercase;
     color: var(--text-muted);
   }
- 
-  /* ANIMATIONS */
+
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -361,8 +395,7 @@
 </style>
 </head>
 <body>
- 
-<!-- HERO -->
+
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="stars-layer"></div>
@@ -370,8 +403,7 @@
   <div class="traveler-beam"></div>
  
   <div class="hero-content">
- 
-    <!-- DESTINY 2 GAME LOGO -->
+
     <div class="game-logo">
       <img class="game-logo-icon" src="tl/tricorn.png" alt="Destiny Tricorn">
       <span class="game-logo-text">DESTINY 2</span>
@@ -385,69 +417,59 @@
     </h1>
   </div>
 </section>
- 
-<!-- VERTICAL TIMELINE -->
+
 <section class="timeline-section">
   <div class="v-timeline">
     <div class="v-line"></div>
- 
-    <!-- Red War -->
+
     <a href="nodes/rw.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"><div class="v-name">Red War</div></div>
       <div class="v-center"><div class="v-orb orb-rw"><img src="tl/img_rw.png" alt="Red War"></div></div>
       <div class="v-label-right"></div>
     </a>
- 
-    <!-- Curse of Osiris -->
+
     <a href="nodes/co.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"></div>
       <div class="v-center"><div class="v-orb orb-co"><img src="tl/img_co.png" alt="Curse of Osiris"></div></div>
       <div class="v-label-right"><div class="v-name">Curse of Osiris</div></div>
     </a>
- 
-    <!-- Warmind -->
+
     <a href="nodes/wm.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"><div class="v-name">Warmind</div></div>
       <div class="v-center"><div class="v-orb orb-wm"><img src="tl/img_wm.png" alt="Warmind"></div></div>
       <div class="v-label-right"></div>
     </a>
  
-    <!-- Forsaken -->
     <a href="nodes/fs.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"></div>
       <div class="v-center"><div class="v-orb orb-fs"><img src="tl/img_fs.png" alt="Forsaken"></div></div>
       <div class="v-label-right"><div class="v-name">Forsaken</div></div>
     </a>
  
-    <!-- Shadowkeep -->
     <a href="nodes/sk.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"><div class="v-name">Shadowkeep</div></div>
       <div class="v-center"><div class="v-orb orb-sk"><img src="tl/img_sk.png" alt="Shadowkeep"></div></div>
       <div class="v-label-right"></div>
     </a>
  
-    <!-- Beyond Light -->
     <a href="nodes/bl.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"></div>
       <div class="v-center"><div class="v-orb orb-bl"><img src="tl/img_bl.png" alt="Beyond Light"></div></div>
       <div class="v-label-right"><div class="v-name">Beyond Light</div></div>
     </a>
  
-    <!-- Witch Queen -->
     <a href="nodes/wq.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"><div class="v-name">Witch Queen</div></div>
       <div class="v-center"><div class="v-orb orb-wq"><img src="tl/img_wq.png" alt="Witch Queen"></div></div>
       <div class="v-label-right"></div>
     </a>
  
-    <!-- Lightfall -->
     <a href="nodes/lf.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"></div>
       <div class="v-center"><div class="v-orb orb-lf"><img src="tl/img_lf.png" alt="Lightfall"></div></div>
       <div class="v-label-right"><div class="v-name">Lightfall</div></div>
     </a>
  
-    <!-- The Final Shape -->
     <a href="nodes/tfs.html" class="v-node fade-in v-node-link">
       <div class="v-label-left"><div class="v-name">The Final Shape</div></div>
       <div class="v-center"><div class="v-orb orb-tfs"><img src="tl/img_tfs.png" alt="The Final Shape"></div></div>
